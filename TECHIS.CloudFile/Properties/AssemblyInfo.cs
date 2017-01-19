@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TECHIS.CloudFile")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("class interfaces for accessing files stored in cloud platforms like AWS or Azure")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TECH-IS INC.")]
 [assembly: AssemblyProduct("TECHIS.CloudFile")]
