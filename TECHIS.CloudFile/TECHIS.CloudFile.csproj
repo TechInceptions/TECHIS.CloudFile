@@ -35,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICloudFileManager.cs" />
+    <Compile Include="ICloudFileManagerFactory.cs" />
     <Compile Include="ICloudFileReader.cs" />
     <Compile Include="ICloudFileReaderFactory.cs" />
     <Compile Include="ICloudFileWriter.cs" />

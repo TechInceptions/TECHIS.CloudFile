@@ -8,8 +8,8 @@ namespace TECHIS.CloudFile
 {
     public interface ICloudFileReaderFactory
     {
-        ICloudFileReader Connect(string containerUri, Encoding encoding = null);
+        ICloudFileReader Connect(string signedContainerUri, Encoding encoding = null);
 
-        ICloudFileReader Connect(string azureStorageConnectionString, string containerName, Encoding encoding = null);
+        ICloudFileReader Connect(string storageAccountConnectionString, string connectionDetails, Encoding encoding = null);
     }
 }
