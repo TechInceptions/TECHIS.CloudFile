@@ -6,7 +6,19 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TECHIS.CloudFile")]
-[assembly: AssemblyDescription("class interfaces for accessing files stored in cloud platforms like AWS or Azure")]
+[assembly: AssemblyDescription(@"
+# TECHIS.CloudFile
+class interfaces for accessing files stored in cloud platforms like AWS or Azure.
+
+## Implementations
+
+### For Azure 
+These interfaces are implemented in the TECHIS.CloudFile.AzureStorage package.
+
+### For AWS 
+These interfaces will be implemented in the TECHIS.CloudFile.AwsS3 package.
+
+")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TECH-IS INC.")]
 [assembly: AssemblyProduct("TECHIS.CloudFile")]
@@ -32,6 +44,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.1.1")]
-[assembly: AssemblyFileVersion("0.1.1")]
+[assembly: AssemblyVersion("0.1.2")]
+[assembly: AssemblyFileVersion("0.1.2")]
 
