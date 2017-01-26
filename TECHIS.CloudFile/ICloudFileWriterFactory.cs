@@ -8,8 +8,8 @@ namespace TECHIS.CloudFile
 {
     public interface ICloudFileWriterFactory
     {
-        ICloudFileWriter Connect(string containerUri, Encoding encoding = null);
+        ICloudFileWriter Connect(string signedContainerUri, Encoding encoding = null);
 
-        ICloudFileWriter Connect(string azureStorageConnectionString, string containerName, Encoding encoding = null);
+        ICloudFileWriter Connect(string storageAccountConnectionString, string connectionDetails, Encoding encoding = null);
     }
 }
