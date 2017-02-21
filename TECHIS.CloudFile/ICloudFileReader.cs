@@ -16,6 +16,7 @@ namespace TECHIS.CloudFile
         Task<string> ReadTextAsync(string fileName);
 
         Task ReadDataAsync(string fileName, Stream output);
+        void ReadData(string fileName, Stream output);
 
     }
 }
