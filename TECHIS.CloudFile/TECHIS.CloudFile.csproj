@@ -42,7 +42,13 @@
     <Compile Include="ICloudFileWriterFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="TECHIS.CloudFile.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\NuGet\nuget.exe" pack "C:\Git\Code\TECHIS.CloudFile\TECHIS.CloudFile\TECHIS.CloudFile.csproj" -Prop Configuration=Release -outputDirectory "C:\Data\PackageRepo" -symbols</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
