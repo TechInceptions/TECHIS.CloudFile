@@ -1,19 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.1;netstandard2.0</TargetFrameworks>
-    <Description>class interfaces for accessing files stored in cloud platforms like AWS or Azure. These interfaces are implemented in the TECHIS.CloudFile.AzureStorage package and upcoming TECHIS.CloudFile.AwsS3</Description>
-    <PackageTags>Azure Storage File Interface</PackageTags>
-    <PackageProjectUrl>http://techinceptions.com/Support/Packages/CloudFile</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/TechInceptions/TECHIS.CloudFile</RepositoryUrl>
+	  <TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<Version>2.0.0</Version>
+		<Title>Interfaces for accessing files stored in cloud platforms like AWS or Azure</Title>
+		
+		<Copyright>TECH-IS INC. 2022</Copyright>
+		<Authors>TECH-IS, Arinze</Authors>
+		<Company>TECH-IS INC.</Company>
+		<Description>class interfaces for accessing files stored in cloud platforms like AWS or Azure. These interfaces are implemented in the TECHIS.CloudFile.AzureStorage package and upcoming TECHIS.CloudFile.AwsS3
+		</Description>  
+		<PackageTags>cloud, azure, blob, Storage, File, Interface</PackageTags>
+		<PackageProjectUrl>http://techinceptions.com/Support/Packages/CloudFile</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/TechInceptions/TECHIS.CloudFile</RepositoryUrl>
+		<PackageOutputPath>C:\Data\PackageRepo</PackageOutputPath>
     <RepositoryType>Git</RepositoryType>
-    <PackageReleaseNotes>Updated dependencies. Added added support for netstandard2.0</PackageReleaseNotes>
-    <PackageOutputPath>C:\Data\PackageRepo</PackageOutputPath>
-    <Version>0.2.1</Version>
-    <Copyright>TECH-IS INC. 2017</Copyright>
-    <Authors>TECH-IS, Arinze</Authors>
-    <Company>TECH-IS INC.</Company>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-  </PropertyGroup>
+    <PackageReleaseNotes>Extended interface. Ended support for Net standard 1.1 </PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+	</ItemGroup>
+
+
 
 </Project>

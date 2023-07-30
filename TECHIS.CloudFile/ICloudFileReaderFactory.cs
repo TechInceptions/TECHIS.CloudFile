@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace TECHIS.CloudFile
 {
-    public interface ICloudFileReaderFactory
+    public interface ICloudFileReaderFactory:IConnector<ICloudFileReader>
     {
-        ICloudFileReader Connect(string signedContainerUri, Encoding encoding = null);
 
-        ICloudFileReader Connect(string storageAccountConnectionString, string connectionDetails, Encoding encoding = null);
     }
 }
