@@ -16,13 +16,9 @@
 		<RepositoryUrl>https://github.com/TechInceptions/TECHIS.CloudFile</RepositoryUrl>
 		<PackageOutputPath>C:\Data\PackageRepo</PackageOutputPath>
     <RepositoryType>Git</RepositoryType>
-    <PackageReleaseNotes>Extended interface. </PackageReleaseNotes>
+    <PackageReleaseNotes>Extended interface. Ended support for Net standard 1.1 </PackageReleaseNotes>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="NetVips" Version="2.3.1" />
-		<PackageReference Include="NetVips.Native" Version="8.14.3" />
-	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
 	</ItemGroup>
