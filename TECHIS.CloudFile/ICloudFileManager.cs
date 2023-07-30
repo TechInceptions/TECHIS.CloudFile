@@ -12,5 +12,6 @@ namespace TECHIS.CloudFile
         string[] List(string containerPath);
         Task DeleteAsync(string fileName);
         Task<string[]> ListAsync(string containerPath);
+        Task<(string Name, DateTimeOffset? LastModified)[]> GetLastModifiedDatesAsync(string containerPath);
     }
 }

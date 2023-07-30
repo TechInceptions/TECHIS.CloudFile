@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace TECHIS.CloudFile
 {
-    public interface ICloudFileWriterFactory
+    public interface ICloudFileWriterFactory: IConnector<ICloudFileWriter>
     {
-        ICloudFileWriter Connect(string signedContainerUri, Encoding encoding = null);
 
-        ICloudFileWriter Connect(string storageAccountConnectionString, string connectionDetails, Encoding encoding = null);
     }
 }

@@ -5,10 +5,8 @@ using System.Text;
 
 namespace TECHIS.CloudFile
 {
-    public interface ICloudFileManagerFactory
+    public interface ICloudFileManagerFactory:IConnector<ICloudFileManager>
     {
-        ICloudFileManager Connect(string signedContainerUri, Encoding encoding = null);
 
-        ICloudFileManager Connect(string storageAccountConnectionString, string connectionDetails, Encoding encoding = null);
     }
 }
